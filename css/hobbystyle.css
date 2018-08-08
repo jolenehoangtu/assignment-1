@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+.big{
+    grid-area: big;
+    /* The image used */
+    background-image: url(/assets/images/travel.jpg);
+    opacity: 0.9;
+    /* Set a specific height */
+    width: 100%;
+    height: auto;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+.wrapper {
+    grid-area: wrapper;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    position: relative;
+}
+div.hobby{
+    margin: 5px;
+    border: 1px solid grey;
+    float: center;
+    background-color: blanchedalmond;
+}
+div.hobby:hover{
+    border: 1px solid #777;
+}
+div.hobby img{
+    width: 100%;
+    height: auto;
+}
+div.desc{
+    padding:15px;
+    text-align: center;
+}
+.container {
+    display: grid;
+    width: auto;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    grid-template-areas:
+    "big big big"
+    "big big big"
+    "big big big"
+    "wrapper wrapper wrapper";
+}
